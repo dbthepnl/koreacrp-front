@@ -4,6 +4,6 @@ const { isLoggedIn } = useAuth();
 
 <template>
   <div>
-    홈 화면
+    홈 화면1
   </div>
 </template>
