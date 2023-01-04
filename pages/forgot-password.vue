@@ -34,16 +34,14 @@ async function submitForm() {
     </template>
 
     <div class="mb-4 text-sm text-gray-600">
-      Forgot your password? No problem. Just let us know your email address and
-      we will email you a password reset link that will allow you to choose a
-      new one.
+      비밀번호를 잊으셨습니까?
     </div>
 
-    <!-- Session Status -->
+    <!-- 세션 status -->
     <AuthSessionStatus class="mb-4" :status="status" />
 
     <form @submit.prevent="submitForm">
-      <!-- Email Address -->
+      <!-- 이메일 주소 -->
       <div>
         <Label for="email">Email</Label>
         <Input
@@ -59,7 +57,7 @@ async function submitForm() {
 
       <div class="flex items-center justify-end mt-4">
         <Button class="ml-3" :disabled="resetEmailSent">
-          Email Password Reset Link
+          이메일 비밀번호 다시 설정하기
         </Button>
       </div>
     </form>

@@ -31,7 +31,7 @@ async function handleResendVerification() {
 
     <div class="mt-4 flex items-center justify-between">
       <Button @click="handleResendVerification" :disabled="verificationIsSent">
-        Resend Verification Email
+        이메일 다시보내기
       </Button>
 
       <button

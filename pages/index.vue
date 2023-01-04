@@ -3,8 +3,7 @@ const { isLoggedIn } = useAuth();
 </script>
 
 <template>
-  //TODO #2: bug @a095678
   <div>
-    홈 화면1
+    홈 화면
   </div>
 </template>

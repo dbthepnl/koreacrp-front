@@ -7,13 +7,13 @@
     <form @submit.prevent="submitForm">
       <!-- 이메일 input -->
       <div>
-        <Label for="email">Email</Label>
+        <Label for="user_id">사용자 ID</Label>
         <Input
-          id="email"
-          type="email"
+          id="user_id"
+          type="text"
           class="block mt-1 w-full"
-          v-model="data.email"
-          :errors="errors.email?.[0]"
+          v-model="data.user_id"
+          :errors="errors.user_id?.[0]"
           required
           autoFocus
         />
@@ -68,7 +68,7 @@ const route = useRoute();
 const { login } = useAuth();
 
 const data = reactive({
-  email: null,
+  user_id: null,
   password: null,
   remember: false,
 });
@@ -84,7 +84,7 @@ async function submitForm() {
   submitRequest(
     login(data),
     () => {
-      router.push("/dashboard");
+      router.push("/admin/user");
     },
     (validationErrors) => {
       errors.value = validationErrors ?? {};

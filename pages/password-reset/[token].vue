@@ -29,7 +29,7 @@
         />
       </div>
 
-      <!-- Confirm Password -->
+      <!-- 비밀번호 다시 입력 -->
       <div class="mt-4">
         <Label for="password_confirmation">새 비밀번호 다시 입력</Label>
         <Input
