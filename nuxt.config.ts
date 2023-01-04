@@ -12,4 +12,15 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["./utils"],
   },
+  plugins: [
+  ],
+  build: {   
+    transpile: [
+      '@heroicons/vue',
+      '@nuxtjs/feed',
+      '@nuxtjs/robots',
+      '@nuxtjs/sitemap',
+      '@nuxtjs/axios',
+    ]
+  },
 });
