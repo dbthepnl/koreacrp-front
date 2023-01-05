@@ -18,8 +18,6 @@
     "@nuxtjs/dayjs": "^1.4.1",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/robots": "^2.5.0",
-    "@nuxtjs/sitemap": "^2.4.0",
-    "vue-sweetalert2": "^5.0.5",
-    "vue3-carousel": "^0.1.46"
+    "@nuxtjs/sitemap": "^2.4.0"
   }
 }
