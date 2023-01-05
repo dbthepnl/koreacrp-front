@@ -8,6 +8,10 @@ npm install
 
 npm run dev
 
+## Run 실행시 에러 문제가 생길경우
+
+node_module 폴더를 삭제 후 npm install을 실행한다.
+
 ## License
 
 koreacrp is open-sourced software licensed under the [MIT license](LICENSE.md).

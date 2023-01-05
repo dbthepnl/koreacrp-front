@@ -2,7 +2,9 @@ import { defineNuxtConfig } from "nuxt/config";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+  ],
   runtimeConfig: {
     public: {
       backendUrl: "http://ec2-3-39-25-43.ap-northeast-2.compute.amazonaws.com",
