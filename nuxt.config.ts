@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      backendUrl: "http://ec2-3-39-25-43.ap-northeast-2.compute.amazonaws.com",
+      backendUrl: "http://ec2-13-209-67-110.ap-northeast-2.compute.amazonaws.com",
       frontendUrl: "http://localhost:3000",
     },
   },

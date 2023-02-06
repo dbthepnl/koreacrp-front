@@ -49,8 +49,8 @@ export async function $korfetch<T, R extends ResponseType = "json">(
   if (process.server) {
     headers = {
       ...headers,
-      ...useRequestHeaders(["cookie"]),
-      referer: frontendUrl,
+      //...useRequestHeaders(["cookie"]),
+      //referer: frontendUrl,
     };
   }
 
@@ -59,7 +59,7 @@ export async function $korfetch<T, R extends ResponseType = "json">(
       baseURL: backendUrl,
       ...options,
       headers,
-      credentials: "include",
+      //credentials: "include",
     });
   } catch (error) {
     if (!(error instanceof FetchError)) throw error;
