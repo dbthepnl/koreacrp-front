@@ -6,7 +6,7 @@ const niceFetch = ref('');
 const response = await axios.get(useRuntimeConfig().public.backendUrl + '/api/certify');
 const response2 = await $korfetch('/api/certify')
 // 첫번째 경로, 2번째 데이터 3번쨰 post, get 빈칸이면 get
-console.log(response2)
+// console.log(response2)
 niceFetch.value = response.data
 </script>
 
@@ -25,7 +25,6 @@ niceFetch.value = response.data
             <div class="text-blue-600">본인인증</div>
             <div class="text-center">회원가입</div>
             <div class="text-center">가입완료</div>
-            {{ response2 }}
         </div>
         </div>
     </div>

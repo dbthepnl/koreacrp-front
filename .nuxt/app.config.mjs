@@ -1,5 +1,5 @@
 
-import { defuFn } from '/Users/sungjunahn/Documents/sanctum/dbkoreacrp/koreacrp-front/node_modules/defu/dist/defu.mjs'
+import { defuFn } from '/Users/jeongseongmin/Korea-Crp-Front/koreacrp-front/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 
