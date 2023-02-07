@@ -57,11 +57,11 @@
             }
         })
         .then( () => {
-            router.push({ name: "MemberInfo", params: {name: name, phone: phone, gender: gender, birth:birth,
-                req_seq: req_seq, auth_type: auth_type, mobile_co: mobile_co}})
+            router.push({ name: "MemberInfo", params: {name: name.value, phone: phone.value, gender: gender.value, birth: birth.value,
+                req_seq: req_seq.value, auth_type: auth_type.value, mobile_co: mobile_co.value}})
+
         })
         .catch( (e) => {
-            //console.log("this.phone",this.phone);
             console.log(e)
             alert("이미 가입된 번호 입니다.");
             router.replace({name: "index"})
