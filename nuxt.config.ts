@@ -4,6 +4,7 @@ import { defineNuxtConfig } from "nuxt/config";
 export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
+    "@pinia/nuxt"
   ],
   runtimeConfig: {
     public: {
@@ -23,6 +24,7 @@ export default defineNuxtConfig({
       '@nuxtjs/robots',
       '@nuxtjs/sitemap',
       '@nuxtjs/axios',
+      "@pinia/nuxt"
     ]
   },
 });

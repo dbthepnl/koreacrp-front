@@ -1,7 +1,9 @@
 <script lang="ts" setup>
 import axios from 'axios'
 import {ref} from 'vue'
+import {state} from '../stores/index'
 const niceFetch = ref('');
+const store = state();
 //const { isLoggedIn } = useAuth();
 const response = await axios.get(useRuntimeConfig().public.backendUrl + '/api/certify');
 const response2 = await $korfetch('/api/certify')
@@ -24,7 +26,7 @@ niceFetch.value = response.data
             <!-- 현 위치는 색생 text-Sky-600으로 변경-->
             <div class="text-blue-600">본인인증</div>
             <div class="text-center">회원가입</div>
-            <div class="text-center">가입완료</div>
+            <div class="text-center">가입완료</div>         
         </div>
         </div>
     </div>

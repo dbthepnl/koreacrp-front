@@ -6,4 +6,5 @@ export { withCtx, withDirectives, withKeys, withMemo, withModifiers, withScopeId
 export { useUser, useAuth, fetchCurrentUser } from '../composables/useAuth';
 export { $korfetch } from '../utils/$korfetch';
 export { submitRequest } from '../utils/submitRequest';
+export { usePinia } from '../node_modules/@pinia/nuxt/dist/runtime/composables';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';
